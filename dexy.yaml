@@ -1,0 +1,3 @@
+documents:
+  - .adoc|jinja|asciidoctor
+  - .adoc|jinja|asciidoctor|fopub

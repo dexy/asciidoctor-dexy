@@ -1,0 +1,2 @@
+A sample project for running asciidoctor within Dexy, including a Dockerfile
+which installs all necessary dependencies.
