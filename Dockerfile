@@ -58,7 +58,7 @@ USER repro
 WORKDIR /home/repro
 
 ### "asciidoctor-fopub"
-RUN wget https://github.com/asciidoctor/asciidoctor-fopub/archive/master.zip
+RUN wget -no-verbose https://github.com/asciidoctor/asciidoctor-fopub/archive/master.zip
 RUN unzip master.zip
 RUN rm master.zip
 RUN echo "export PATH=$PATH:/home/repro/asciidoctor-fopub-master" >> .bashrc
