@@ -31,7 +31,7 @@ RUN apt-get install python-dev
 RUN apt-get install python-pip
 
 ### "dexy"
-RUN pip install dexy
+RUN pip install dexy>=1.0.13
 
 ### "asciidoctor"
 RUN apt-get install ruby1.9.1
@@ -58,7 +58,7 @@ USER repro
 WORKDIR /home/repro
 
 ### "asciidoctor-fopub"
-RUN wget -no-verbose https://github.com/asciidoctor/asciidoctor-fopub/archive/master.zip
+RUN wget --no-verbose https://github.com/asciidoctor/asciidoctor-fopub/archive/master.zip
 RUN unzip master.zip
 RUN rm master.zip
 RUN echo "export PATH=$PATH:/home/repro/asciidoctor-fopub-master" >> .bashrc

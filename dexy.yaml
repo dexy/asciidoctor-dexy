@@ -1,3 +1,10 @@
 documents:
-  - .adoc|jinja|asciidoctor
-  - .adoc|jinja|asciidoctor|fopub
+   - .adoc|jinja|asciidoctor:
+       - except: README
+       - doc-deps
+   - .adoc|jinja|asciidoctor|fopub:
+       - except: README
+       - doc-deps
+
+doc-deps:
+    - dexy.yaml|idio|asciisyn
