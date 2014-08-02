@@ -1,0 +1,9 @@
+= Asciidoctor Example
+:toclevels: 2
+:icons: font
+:source-highlighter: pygments
+
+== Introduction
+
+This is an example asciidoctor document which can be converted into various formats with a single command by running dexy.
+
